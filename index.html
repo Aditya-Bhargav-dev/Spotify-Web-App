@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web App</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+    <script src="spotifyscript.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <div class="container-fluid bg-1 topBotomBordersOut ">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 " id="login">
+                </div>
+                <div class="col-xs-12 col-md-6 ">
+                    <a href="#playlist"><i class="fa fa-fw fa-bar-chart"></i> Playlists</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <label for="Genre" class="form-label col-sm-2">Genre:</label>
+        <select name="" id="select_genre" onChange="window.open(this.value)"
+            class="form-control form-control-sm col-sm-10">
+            <option>Select...</option>
+        </select>
+    </div>
+
+    <hr style="border-top: dotted 4px;" />
+    <div class="text-center">
+
+        <h3 style="font-family:sans-serif ;font-size:50px" ;>Your Playlists</h3>
+
+        <br>
+        <!-- Container with two rows-->
+        <div class="container-fluid text-center">
+            <div class="row" id="playlist">
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- Container with one row(footer)-->
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+            <div class="contain">
+
+                <div class="col-md-6 col-xl-5">
+                    <div>
+                        <p>Spotify Music Web App</p>
+                        <!-- Rights-->
+                        <p class="rights"><span>© </span><span class="copyright-year">2021</span><span> </span><span>.
+                            </span><span>All Rights Reserved.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <span>Made by Aditya bhargav with Spotify Clone</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
