@@ -1,7 +1,7 @@
 const AUTHORIZE = "https://accounts.spotify.com/authorize"
 
 
-var redirect_uri = '/index.html'; // Your redirect uri// 
+var redirect_uri = '/home.html'; // Your redirect uri// 
 
 function requestAuthorization(){
     var client_id = ''; // Your client id
